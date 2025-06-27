@@ -19,8 +19,7 @@
 
   <script>
     // Header'ı yükle
-    fetch('./proje-adi/partials/header.html')
- // Veya 'partials/header.html' dosya yapınıza göre
+    fetch('../partials/header.html') // Veya 'partials/header.html' dosya yapınıza göre
       .then(response => {
         if (!response.ok) throw new Error(`Header yüklenemedi: ${response.status}`);
         return response.text();
@@ -33,7 +32,7 @@
       });
 
     // hero-section'ı yükle
-    fetch('./partials/hero-section.html') // Veya 'partials/footer.html' dosya yapınıza göre
+    fetch('../partials/hero-section.html') // Veya 'partials/footer.html' dosya yapınıza göre
       .then(response => {
         if (!response.ok) throw new Error(`hero-section yüklenemedi: ${response.status}`);
         return response.text();
