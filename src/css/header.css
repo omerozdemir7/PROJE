@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --white: white;
+  --hexadecimal: #1d1d1d;
+  --brown: #bea69e;
+  --font:"MD Sans", sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  
+  font-family: var(--font);
+}
+
+.nav {
+  position: relative;
+  background-color: black;
+  width: 982px; /* tekrar vardı, biri silindi */
+  height: 60px;
+  top: 20px;
+  left: 100px;
+  gap: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  
+}
+.nav .logo{
+    width: 123px;
+    height: 16px;
+    left: 50px;
+    position: relative;
+    object-fit: cover;
+}
+
+.nav ul {
+  width: auto;
+  height: auto;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  left: 340px;
+  
+  font-size: 14px;
+ line-height: 100%;
+ letter-spacing: 0%;
+}
+
+
+
+.nav ul li {
+ 
+  color: var(--white);
+  font-family: var(--font);
+  text-transform: uppercase;
+cursor: pointer;
+}
+
+.main-button {
+  background-color: var(--white);
+  position: absolute;
+  left: 1002px;
+  border-radius: 12px;
+  padding: 16px 84px;
+  border: none;
+  color: #121212;
+  width: 238px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center;     /* Dikeyde ortala */
+  white-space: nowrap;     /* Metni tek satırda tutar */
+}

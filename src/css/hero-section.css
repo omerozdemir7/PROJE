@@ -1,0 +1,181 @@
+:root {
+  --white: white;
+  --hexadecimal: #1d1d1d;
+  --brown: #bea69e;
+  --font:"MD Sans", sans-serif;
+
+}
+
+
+.hero-section{
+    width: 1240px;
+    height: 600px;
+    top: 160px;
+    left: 100px;
+    border-radius: 30px;
+    background-color: var(--hexadecimal);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.rectangle{
+    top: 80px;
+    left: 743px;
+    position: relative;
+}
+
+.hero-section .title{
+    width: 563px;
+height: 204px;
+top: 80px;
+left: 50px;
+font-size: 64px;
+font-weight: 500;
+line-height: 68px;
+letter-spacing: -4%;
+position: absolute;
+color: var(--white);
+}
+
+.title span{
+    
+    color: var(--brown);
+    font-style: italic;
+    
+
+
+}
+
+.title-1{
+    width: 418px;
+    height: 54px;
+    top: 304px;
+    left: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -2%;
+    position: absolute;
+    color: var(--white);
+}
+
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    top: 450px;
+    position: absolute;
+}
+
+.happy-students-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+.student-profiles {
+    display: flex;
+    position: relative;
+    width: 140px;
+    height: 54px;
+}
+
+.profile-img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 3px solid var(--hexadecimal);
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.profile-img.first-img {
+    left: 0;
+    z-index: 3;
+}
+
+.profile-img.second-img {
+    left: 40px;
+    z-index: 2;
+}
+
+.profile-img.third-img {
+    left: 80px;
+    z-index: 1;
+}
+
+.students-text-and-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.students-title {
+    width: 82px;
+    
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -4%;
+}
+
+.arrow-icon {
+    font-size: 24px;
+    margin-top: 5px;
+    color: var(--white);
+}
+
+.reviews-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+.star-icon-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-star {
+  width: 30px;
+  height: 30px;
+  fill: none; /* içi boş */
+  stroke: var(--hexadecimal); /* çizgi rengi */
+  stroke-width: 2.5px; /* çizgi kalınlığı */
+}
+
+
+.reviews-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reviews-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2px;
+}
+
+.reviews-count {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+}
