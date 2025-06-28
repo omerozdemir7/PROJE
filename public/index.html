@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../src/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"/>
+    <title>proje</title>
+  </head>
+  <body>
+    <div id="header-container"></div>
 
- 
-  <title>proje</title>
-</head>
-<body>
+    <div id="hero-section"></div>
 
-  <div id="header-container"></div>
+    <script>
+      // Header'ı yükle
+      fetch("../partials/header.html") // Veya 'partials/header.html' dosya yapınıza göre
+        .then((response) => {
+          if (!response.ok)
+            throw new Error(`Header yüklenemedi: ${response.status}`);
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Header yüklenirken hata:", error);
+        });
 
- 
-
-  <div id="hero-section"></div>
-
-  <script>
-    // Header'ı yükle
-    fetch('../partials/header.html') // Veya 'partials/header.html' dosya yapınıza göre
-      .then(response => {
-        if (!response.ok) throw new Error(`Header yüklenemedi: ${response.status}`);
-        return response.text();
-      })
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Header yüklenirken hata:', error);
-      });
-
-    // hero-section'ı yükle
-    fetch('../partials/hero-section.html') // Veya 'partials/footer.html' dosya yapınıza göre
-      .then(response => {
-        if (!response.ok) throw new Error(`hero-section yüklenemedi: ${response.status}`);
-        return response.text();
-      })
-      .then(data => {
-        document.getElementById('hero-section').innerHTML = data;
-      })
-      .catch(error => {
-        console.error('hero-section yüklenirken hata:', error);
-      });
-  </script>
-
-</body>
+      // hero-section'ı yükle
+      fetch("../partials/hero-section.html") // Veya 'partials/footer.html' dosya yapınıza göre
+        .then((response) => {
+          if (!response.ok)
+            throw new Error(`hero-section yüklenemedi: ${response.status}`);
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("hero-section").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("hero-section yüklenirken hata:", error);
+        });
+    </script>
+  </body>
 </html>
